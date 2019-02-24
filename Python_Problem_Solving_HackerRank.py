@@ -38,6 +38,31 @@ def mutate_string(string, position, character):
 
     return string
 
+########################################################################################################################
+#Lists
+########
+
+if __name__ == '__main__':
+    N = int(input())
+    myList = []
+    
+    for i in range(N):
+        lines = str(input()).split()
+        if lines[0] == 'insert':
+            myList.insert(int(lines[1]),int(lines[2]))
+        elif lines[0] == 'print':
+            print(myList)
+        elif lines[0] == 'remove':
+            myList.remove(int(lines[1]))
+        elif lines[0] == 'append':
+            myList.append(int(lines[1]))
+        elif lines[0] == 'sort':
+            myList.sort()
+        elif lines[0] == 'pop':
+            myList.pop()
+        elif lines[0] == 'reverse':
+            myList.reverse()
+
 #############################################################################################################
 
 s = input()
