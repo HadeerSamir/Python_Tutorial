@@ -186,4 +186,32 @@ if __name__ == '__main__':
     print(value)
   
 #####################################################################################################################
+# Nested Lists
+#################
+
+if __name__ == '__main__':
+    students = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name,score])
+
+    scores = list(students[x][1] for x in range(len(students[0])))
+    scores.sort()
+   # min_score = scores[0]
+   # second_min_score = 0
+
+    '''for score in scores[1:]:
+        if score == min_score:
+            continue
+        else:
+            second_min_score = score
+            break'''
+
+    students = [x[0] for x in students if x[1] == scores[1]]
+    students.sort()
+
+    for j in students:
+        print(j)
+###########################################################################################################################
 
