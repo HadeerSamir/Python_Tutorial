@@ -16,6 +16,7 @@
  #### IMPORTANT ######
 
  #    The any() method returns True if any element of an iterable is True. If not, any() returns False. such as print (any())
+ #    To print items in one line using separator without using string menthods use ( print(item,end="separator") ).
 
 print("Hello,World!")
 
