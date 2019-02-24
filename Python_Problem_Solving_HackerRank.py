@@ -61,3 +61,19 @@ def solve(s):
     return ' '.join(name.capitalize() for name in names)
 
 ###################################################################################################################
+# Leap Year 
+#############
+
+def is_leap(year):
+    leap = True
+    if year % 100 == 0:
+        if year % 400 == 0:
+            return leap
+        else:
+            return not(leap)
+
+    if year % 4 == 0:
+        return leap
+    return not(leap)
+
+#####################################################################################################################
