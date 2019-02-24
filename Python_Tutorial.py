@@ -210,7 +210,7 @@ all the elements of the list.
 - list methods ( copy() [ make a copy of the list] , count() [ returns the number of the elements of specified value] ,
 extend() [Add the elements of a list (or any iterable), to the end of the current list] , 
 index() [Returns the index of the first element with the specified value] , reverse() [Reverses the order of the list]
-, sort() [sort the list])
+, sort() [sort the list] , to sort list in desc use listName.sort(reverse=true).
 """
 
 thisList = ["apple" , "orange" , "banna"]
