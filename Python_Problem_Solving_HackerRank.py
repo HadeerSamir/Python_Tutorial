@@ -175,3 +175,15 @@ if __name__ == '__main__':
     print("%.2f" % average)    # round to 2 decimal numbers
    #######################################################################################################################
 
+# Tuples
+###########
+
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    thisTuple = tuple(integer_list)
+    value = hash(thisTuple)
+    print(value)
+  
+#####################################################################################################################
+
